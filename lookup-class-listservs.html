@@ -7,6 +7,12 @@
 
 <body>
 
+  <h1>Lookup Class Listerservs</h1>
+
+  <p>
+    <a href="https://it.mercer.edu/faculty/email/email_listservs.htm">Original Page</a>
+  </p>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/forms-min.css" integrity="sha256-qgMQ+mFfAhlAKj3gSapq62o7SIAYbWAPxYhAykHSzcc=" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/buttons-min.css" integrity="sha256-+RBx38dshEH8QgPl8Hg2BaGC1vdhyy/fnnnBXRtMdnE=" crossorigin="anonymous" />
 
@@ -14,17 +20,19 @@
     <fieldset>
 
       <label for="course">Course ID and Section</label>
-      <input id="course" type="text" name="course">
+      <input id="course" type="text">
       <div class="pure-form-message">
         e.g. BIO101
       </div>
 
-        <input class="pure-button pure-button-primary" name="Submit" value="Submit" type="button">
+        <a class="pure-button pure-button-primary" href="mailto:mailserv@mercer.edu">
+          Email
+        </a>
     </fieldset>
   </form>
 
   <script>
-    // Email template
+    // Email Template
     // To: `mailserv@mercer.edu`
     // Body: `DIR/LIST <course id>`
 
