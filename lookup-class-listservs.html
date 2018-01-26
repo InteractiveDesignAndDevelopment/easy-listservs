@@ -1,0 +1,473 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=8"/>
+<title>MU Information Technology - Email Listservs</title>
+<script type="text/javascript" src="http://it.mercer.edu/scripts/jquery-1.3.2.js"></script>
+<script type="text/javascript" src="http://it.mercer.edu/scripts/ddaccordion.js"></script>
+<script src="http://it.mercer.edu/scripts/jquery.inflector.js" type="text/javascript"></script>
+ <script src="http://it.mercer.edu/scripts/jquery.breadcrumbs.js" type="text/javascript"></script>
+<script type="text/javascript">
+ddaccordion.init({
+	headerclass: "selchannel", //Shared CSS class name of headers group
+	contentclass: "submenu", //Shared CSS class name of contents group
+	revealtype: "mouseover", //Reveal content when user clicks or onmouseover the header? Valid value: "click" or "mouseover
+	mouseoverdelay: 600, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+	collapseprev: true, //Collapse previous content (so only one open at any time)? true/false
+	defaultexpanded: [0], //index of content(s) open by default [index1, index2, etc] [] denotes no content
+	onemustopen: true, //Specify whether at least one header should be open always (so never all headers closed)
+	animatedefault: false, //Should contents open by default be animated into view?
+	persiststate: false, //persist state of opened contents within browser session?
+	toggleclass: ["", "selected"], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+	togglehtml: ["", "", ""], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+	animatespeed: "slow", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+	oninit:function(headers, expandedindices){ //custom code to run when headers have initalized
+	        var links = $("div.leftnav div.submenu a");
+        for (var i = 0; i < links.length; i++) {
+            var link = links[i];
+            var link_file_name = /\/([^\/-]+)[^\/]*[-\.][^\/]*$/.exec(link)
+            var href_file_name = /\/([^\/-]+)[^\/]*[-\.][^\/]*$/.exec(location.href)
+            if (null != link_file_name && null != href_file_name && link_file_name[1] == href_file_name[1]) {
+                $(link).addClass("current");
+            }
+        }
+
+	},
+	onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+		//do nothing
+	}
+})
+
+$(document).ready(function() {
+		$("#selLinks").val(""); 
+		$("#selLinks").change(function(){
+			window.location = $(this).val();
+		});
+	});
+
+</script>
+<link href="../../styles/faculty/faculty_subpage.css" rel="stylesheet" type="text/css" />
+<!--[if lt IE 7]>
+   <link rel="stylesheet" type="text/css" href="../../styles/faculty/faculty_sub_ie.css" /> 
+<![endif]-->
+</head>
+<body>
+<div id="wrapper">
+   <script type="text/javascript">
+    //<!CDATA[
+        $(document).ready(function() {
+   
+		    
+			document.getElementById('status_icon').src = "/status/status_icons/current_faculty_status/status_icon.png?"  + new Date();
+			document.getElementById('phishing_icon').src = "/status/status_icons/current_faculty_phishing/status_icon.png?"  + new Date();
+			
+		
+        });
+    //]]>
+    </script>
+ 
+
+        <div id="headercontainer">
+           <!-- <div id="topmasttop"><!-- </div>  -->
+            <div id="topmastmain">
+             
+                        <div id="logo_wrapper">
+                        	<a href="http://it.mercer.edu/faculty/index.htm"> 
+                            	<img src="/images/header/mercer_logo_transparent.png" class="centered" width="260" alt="Mercer Homepage" border="0" align="absbottom"/>
+                            </a>
+                            <a href="http://it.mercer.edu/faculty/index.htm"> 
+                            	<img src="/images/header/it_logo.png" width="330" height="44" alt="MU IT Homepage" border="0" align="absbottom"/>
+                            </a>
+                        </div>
+              
+              
+              
+              <div id="search_and_role_selection_wrapper">
+                        <div id="sectiontitle">
+                             Now Viewing Information for: <span class="bigtext">Employees</span>
+                            <br />
+                            Show me information for <a href="http://it.mercer.edu/student/index.htm"><strong>Students</strong></a>
+                            
+                        </div>
+                        
+                        
+                        
+                        <div id="search_container">
+                
+                                  <div id="search_box_and_icon">
+                                     <form action="http://it.mercer.edu/faculty/search_results_page.htm" id="cse-search-box">
+                                       
+                                      
+                                        <input type="hidden" name="cx" value="012607311805140801608:s-vc_5n9xgs" />
+                                        <input type="hidden" name="cof" value="FORID:10" />
+                                        <input type="hidden" name="ie" value="UTF-8" />
+                                        
+                                   
+                                        <input type="text" id="searchbox" name="q" placeholder="How can we help?" >
+                                        
+                                        <input type="submit" id="sa" name="sa" value=""/>
+                                        <script type="text/javascript" src="//www.google.com/coop/cse/brand?form=cse-search-box&lang=en"></script>
+                                    </form>
+                                               
+                                </div>
+                        
+                         </div>
+                 </div>
+                 
+            </div>
+        </div>
+        
+        
+        <div id="menu_search_wrapper">
+        
+       
+        
+        
+        
+<ul id="menu">
+
+  
+    
+    <li class="menu_left"><a href="#" class="drop">Take me to...</a><!-- Begin Home Item -->
+    
+        <div class="dropdown_1column"><!-- Begin 2 columns container -->
+    
+         
+    
+            <div class="col_1">
+     <ul>
+	 
+			
+             <li>	<a href="http://canvas.mercer.edu/">Canvas</a></li>
+			
+				<li><a href="http://it.mercer.edu/faculty/campusvue_login.htm">CampusNexus</a></li>
+			
+			<li>	<a href="https://p2.courseval.net/etw/ets/et.asp?nxappid=ZM2&nxmid=start">Course Evaluations</a></li>
+			
+			<li>	<a href="https://mercerconnect.mercer.edu">Email: MercerConnect</a></li>
+			
+			<li>	<a href="http://apps.mercer.edu/directory/">Mercer Directory</a></li>
+			
+
+			<li>	<a href="https://my.mercer.edu">MyMercer</a></li>
+			
+
+				<li><a href="https://pwhelp.mercer.edu/showLogin.cc">Password Self-Service</a></li>
+			
+			<li>	<a href="http://it.mercer.edu/faculty/remote_support.htm">TeamViewer</a></li>
+			
+			<li>	<a href="http://it.mercer.edu/faculty/academic_technology/training&tutorials/webex.htm">WebEx</a></li>
+	</ul>		
+            </div>
+    
+          
+          
+        </div><!-- End 2 columns container -->
+    
+    </li><!-- End Home Item -->
+
+    <li ><a href="http://it.mercer.edu/faculty/contact_us.htm" class="drop">Contact Us</a><!-- Begin 5 columns Item -->
+    
+    
+    </li><!-- End 5 columns Item -->
+
+    <li ><a href="http://it.mercer.edu/faculty/about_it.htm" class="drop">About IT</a>
+    
+    </li><!-- End 4 columns Item  -->
+
+
+<li class="menu_right">
+
+	 
+     
+         <a href="http://it.mercer.edu/faculty/system_status.htm" class="drop">System Status: <img id="status_icon" style="vertical-align:bottom;" src="/status/status_icons/current_faculty_status/status_icon.png"  alt="" />  </a> 
+		 
+		 </li>
+
+
+	<li class="menu_right">
+
+	 
+     
+         <a href="http://it.mercer.edu/faculty/security/known_phishing.htm" class="drop">Phishing Alert: <img id="phishing_icon" style="vertical-align:bottom;" src="/status/status_icons/current_faculty_phishing/status_icon.png"  alt="" />  </a> 
+			 
+		
+     
+               
+        
+	</li>
+
+
+
+</ul>
+            
+            
+          
+             
+		
+			<div id="social_media_container_menu">
+    				
+					    <a href="https://twitter.com/MercerHelpDesk" target="_blank"><div id="twitter"><!-- --></div></a>	
+                          <a href="https://www.instagram.com/MercerHelpDesk/" target="_blank"><div id="instagram"><!-- --></div></a>	
+                           <a href="https://www.facebook.com/pages/Help-Desk/1473144699626931" target="_blank"><div id="facebook"><!-- --></div></a>	
+  	 	 </div>
+        
+       
+
+        </div>
+  <div id="breadcrumbs-wrapper"><!----></div>
+  <script type="text/javascript">
+        $(document).ready(function() {
+            $("#breadcrumbs-wrapper").html($().breadcrumbs());
+        });
+    </script>
+       <div id="maincontent">   
+      <title></title>
+<div class="leftnav">
+  <div class="selchannel">
+    <div id="btnemailoff"></div>
+    <div id="tertiarytext"><a href="http://it.mercer.edu/faculty/email/index.htm">Email</a></div>
+  </div>
+  <div class="submenu">
+    <ul>
+      <li><a href="http://it.mercer.edu/faculty/email/email_access.htm">Email Access</a></li>
+      
+       <li><a href="http://it.mercer.edu/faculty/email/email_listservs.htm"> Listservs</a></li>
+      <li><a href="http://it.mercer.edu/faculty/email/email_access_and_use_policy.htm">Email Access and Use Policy</a></li>
+    </ul>
+  </div>
+  <div class="selchannel">
+    <div id="btnhsoff"></div>
+    <div id="tertiarytext"><a href="http://it.mercer.edu/faculty/hardware_software/index.htm" >Hardware &amp; Software</a></div>
+  </div>
+  <div class="submenu">
+    <ul>
+      <li><a href="http://it.mercer.edu/faculty/hardware_software/employee_discounts.htm">Employee Discounts</a></li>
+      <li><a href="http://it.mercer.edu/faculty/hardware_software/equipment_loan.htm">Equipment Loan</a></li>
+      <li><a href="http://it.mercer.edu/faculty/hardware_software/free_software_downloads.htm">Free Software</a></li>
+      <li><a href="http://it.mercer.edu/faculty/hardware_software/purchasing/index.htm">Purchasing</a></li>
+      <li><a href="http://it.mercer.edu/faculty/hardware_software/purchasing/computer_age.htm">Verify Computer Age</a></li>
+      <li><a href="http://it.mercer.edu/Faculty/policy/desktop_computing_serviceability_policy.htm">Serviceability and Redeployment Policy</a></li>
+      <li><a href="http://it.mercer.edu/faculty/hardware_software/it_access_and_use_policy.htm">IT Access and Use Policy</a></li>
+      <li><a href="http://it.mercer.edu/faculty/hardware_software/reallocation_and_disposal_policy.htm">Reallocation and Disposal Policy</a></li>
+    </ul>
+  </div>
+  <div class="selchannel">
+    <div id="btntelcommoff"></div>
+    <div id="tertiarytext"><a href="http://it.mercer.edu/faculty/telecommunications/index.htm">Telecommunications</a></div>
+  </div>
+  <div class="submenu">
+    <ul>
+      <li> <a href="http://it.mercer.edu/faculty/telecommunications/cisco_telephone_system.htm"> Cisco Telephone System</a></li>
+      <li> <a href="http://it.mercer.edu/faculty/telecommunications/data_port.htm">Data Port</a></li>
+      <li><a href="https://apps.mercer.edu/hr_update_survey/login.cfm">Emergency Alert Registration </a></li>
+      <li><a href="http://it.mercer.edu/faculty/telecommunications/fax.htm">FAX</a></li>
+      <li><a href="http://it.mercer.edu/faculty/hardware_software/purchasing/index.htm">Pricing</a></li>
+      <li><a href="http://it.mercer.edu/faculty/telecommunications/telephone_tutorials.htm">Tutorials</a></li>
+    </ul>
+  </div>
+  <div class="selchannel">
+    <div id="btnwebservoff"></div>
+    <div id="tertiarytext"><a href="http://it.mercer.edu/faculty/website_services/index.htm">Website Services</a></div>
+  </div>
+  <div class="submenu">
+    <ul>
+      <li><a href="http://it.mercer.edu/faculty/website_services/getting_started.htm">Getting Started</a></li>
+      <li><a href="http://it.mercer.edu/faculty/website_services/website_access.htm">Website Access</a></li>
+      <li><a href="http://marcomm.mercer.edu/standards" target="_blank">Graphic Standards Policy</a></li>
+      <li><a href="http://it.mercer.edu/faculty/website_services/web_publishing_policy.htm">Web Publishing Policy</a> </li>
+    </ul>
+  </div>
+  <div class="selchannel">
+    <div id="btnnetworkoff"></div>
+    <div id="tertiarytext"><a href="http://it.mercer.edu/faculty/internet_network/index.htm">Internet/Network</a></div>
+  </div>
+  <div class="submenu">
+    <ul>
+      <li><a href="http://it.mercer.edu/faculty/internet_network/wireless_access.htm">Network Access</a></li>
+      <li><a href="http://it.mercer.edu/faculty/internet_network/vpn_access.htm">Virtual Private Network (VPN) Access</a></li>
+      <li><a href="http://it.mercer.edu/faculty/internet_network/guest.htm">Wireless Access for Guests</a></li>
+      <li><a href="http://it.mercer.edu/faculty/internet_network/it_access_and_use_policy.htm">IT Access and Use Policy</a></li>
+    </ul>
+  </div>
+  <div class="selchannel">
+    <div id="btnsecurityoff"></div>
+    <div id="tertiarytext"><a href="http://it.mercer.edu/faculty/security/index.htm">Security</a></div>
+  </div>
+  <div class="submenu">
+    <ul>
+   
+    <li><a href="http://it.mercer.edu/faculty/security/pwhelp.htm">Password Self-Service</a></li>
+      <li><a href="http://it.mercer.edu/Faculty/security/endpoint_protection.htm">Endpoint Protection Antivirus</a></li>
+      <li><a href="http://it.mercer.edu/Faculty/security/computer_management/index.htm">Computer Management Software</a></li>
+      <li><a href="http://it.mercer.edu/faculty/security/phishing.htm">Phishing Scams</a></li>
+      <li><a href="http://it.mercer.edu/Faculty/security/removing_data.htm">Removing Mobile Devices Data</a><br />
+      </li>
+      <li><a href="http://it.mercer.edu/faculty/security/security_best_practices.htm">Security Best Practices</a></li>
+      <li><a href="http://it.mercer.edu/faculty/security/updates.htm">Security Updates</a></li>
+      <li><a href="http://it.mercer.edu/faculty/security/virus_and_spam.htm">Virus and Spam Protection</a></li>
+      <li><a href="http://it.mercer.edu/faculty/security/data_security_policy.htm">Data Security Policy</a></li>
+    </ul>
+  </div>
+  <div class="selchannel">
+    <div id="btnclasstechoff"></div>
+    <div id="tertiarytext"><a href="http://it.mercer.edu/faculty/academic_technology/index.htm">Academic Technology</a></div>
+  </div>
+  <div class="submenu">
+    <ul>
+      <li><a href="http://it.mercer.edu/faculty/academic_technology/audio_visual_services.htm">Audio Visual</a></li>
+   
+      <li><a href="http://it.mercer.edu/faculty/academic_technology/canvas.htm">Canvas</a></li>
+      <li><a href="http://it.mercer.edu/faculty/academic_technology/computer_labs.htm">Computer Labs</a></li>
+      <li><a href="http://it.mercer.edu/vue/">MyMercer/CampusNexus</a><a href="http://it.mercer.edu/faculty/academic_technology/audio_visual_services.htm"></a></li>
+      <li><a href="http://it.mercer.edu/faculty/academic_technology/training&amp;tutorials/index.htm">Training &amp; Tutorials</a></li>
+      <li><a href="http://it.mercer.edu/faculty/academic_technology/computer_lab_support_policy.htm">Computer Lab Support Policy</a></li>
+      <li><a href="http://it.mercer.edu/faculty/academic_technology/audio_visual_policy_for_outside_events.htm">Audio Visual Policy for Outside Events</a></li>
+    </ul>
+  </div>
+  <div class="selchannel">
+    <div id="btnnewoff"></div>
+    <div id="tertiarytext"><a href="http://it.mercer.edu/faculty/new_employees/index.htm">New Employees</a></div>
+  </div>
+  <div class="submenu">
+    <ul>
+      <li><a href="http://it.mercer.edu/faculty/new_employees/getting_started.htm">Getting Started</a></li>
+      <li><a href="http://it.mercer.edu/faculty/new_employees/request_form.htm">Employee Account Request Form</a></li>
+    </ul>
+  </div>
+</div>
+
+      <div id="copycontainer">
+        <div id="subnavtitle">Listservs</div>
+        <div id="copy">
+          <p><a name="top" id="top"></a>Information  Technology maintains many email lists (a.k.a. “listservs”) for use by Mercer  faculty, staff, and students. The purpose of listservs is to facilitate the  dissemination of information to specific, targeted members the Mercer  community. <br />
+          </p>
+          <table width="725" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><strong>In this section:</strong></td>
+              <td><strong>Additional resources:</strong></td>
+            </tr>
+            <tr>
+              <td valign="top"><ul>
+            <li><a href="#_Sending_Emails_to">Sending Emails to a  Listserv</a></li>
+            <li><a href="#_Class_ListServs">Class Listservs</a></li>
+            <li><a href="#Look_Up">Look up your Class Lists</a></li>
+              </ul></td>
+              <td>
+              <ul>
+             <li><a href="email_listservs-university-wide_listservs.htm">University Wide Listservs</a></li>
+            <li><a href="email_listservs-special_interest_listservs.htm">Special Interest Listservs</a> (e.g., Email-Shop, Wellness, Prayers ‘n Praise)</li>
+          <li><a href="email_listservs-school-specific_listservs.htm">Faculty/Staff Listservs by School</a> </li>
+            <li><a href="email_listservs-campus.htm">Student Listservs by Campus</a></li>
+            <li><a href="email_listservs-academic_level.htm">Student Listservs by Academic Level</a></li>
+            <li><a href="email_listservs-program-year.htm">Student Listservs by Program and Academic Level</a></li>
+            <li><a href="email_listservs-concentration.htm">Student Listservs by Concentration</a></li>
+               <li><a href="email_listservs-program-concentration.htm">Student Listservs by Program and Concentration</a></li>
+            <li><a href="email_advisors.htm">Advisor Listservs</a></li>
+              </ul></td>
+            </tr>
+          </table>
+          <h2><a name="_Sending_Emails_to" id="_Sending_Emails_to"></a>Sending  Emails to a Listserv</h2>
+          <p>You can send email messages to a listserv  by addressing them to <em>listname</em>@lists.mercer.edu (replacing “listname” with the listserv name, such as  TestList-L). Character case (upper/lower) does  not matter in the listserv mailing process. It is used here for readability  purposes only. Note that some listservs  restrict contributors to certain individuals or certain email addresses (such  as @mercer.edu). Review contribution restrictions in each of the listserv  descriptions below.</p>
+          <h2><a name="_Class_ListServs" id="_Class_ListServs"></a><strong>Class Listservs</strong></h2>
+          <p>Faculty  and students use class listservs to communicate information about a particular  class, group, or project. Class listservs are automatically generated based on  course enrollment in the Student Information System. The instructing faculty  member's Mercer email address and the students' Mercer email addresses will be  used to create these lists. The lists will be updated daily using the current  course enrollment; as students are added to or removed from class rosters, the  lists will be updated accordingly.</p>
+              
+           <p>The listservs are automatically named by the following pattern: Course ID, Section, Year (two digits), Semester, Location, Session followed by @lists.mercer.edu. For example, Spring 2011 Macon campus lists for ANT 390.2TM, ACC 641.A21, and BIE700.S02 are ANT3902TM11SPMCN00, ACC641A2111SPMCN00, and BIE700S0211SPMCN00, respectively. </p>
+           
+			<!-- Supports the form below -->
+			<link href="//assets.mercer.edu/bootstrap-context/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+			<h2>
+			  <script src="//assets.mercer.edu/bootstrap-context/3.0.3/js/bootstrap.min.js"></script>
+			  <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+			  <script src="//assets.mercer.edu/jquery-validate-bootstrap/3.0.0/jquery.validate.bootstrap.js"></script>
+			  <a name="Look_Up" id="Look_Up"></a>Look up your Class Lists</h2>
+			<p>Use the form below to have your class list(s) emailed to your Mercer email account.</p>
+			<p><br />
+		  </p>
+			<div class="bootstrap">
+<form action="https://apps.mercer.edu/forms/it-class-listservs-signup.cfm" class="form-horizontal" id="listserv-signup" method="post">
+						<div class="form-group">
+							<div class="col-xs-4">
+				        Enter your Mercer Email Address: (e.g. smith_jd@mercer.edu)</div>
+							<div class="col-xs-8">
+								<input class="form-control required email" id="email" type="text" name="email">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-xs-4">
+        Enter your Course ID and Section: (e.g.  BIO101)</div>
+							<div class="col-xs-8">
+								<input class="form-control required" id="course" type="text" name="course">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-xs-offset-4 col-xs-8">
+								<input class="btn btn-primary" name="Submit" value="Submit" type="submit">
+							</div>
+						</div>
+					</form>
+					<script>
+						jQuery(function($) {
+							$('#listserv-signup').validate();
+						});
+					</script>
+				</div>
+			</p>
+			
+			<p>After submitting the form, you will receive an email with a list of all of the class lists that begin with the course and section number you entered. To email your class, find your course in the list and add @lists.mercer.edu (e.g. BIO101A2111SPMCN00@lists.mercer.edu). Only those people subscribed to the list will be  allowed to send messages to it. No subscriptions from non-Mercer e-mail  accounts will be allowed.</p>
+            To create  additional class listservs, contact the Mercer <a href="../contact_us.htm">IT Help Desk</a>.</p>
+        <br />
+<br />
+<br />
+<br />
+    
+      </div>
+    </div>
+  </div>
+  <style>
+#social_icons{
+margin-top: 0px;	
+}
+</style>
+ <div id="footercontainer">
+      
+            <div id="footercontent">
+              
+				<div id="mlogo" >
+						 <a href="http://www.mercer.edu" target="_blank"><img src="http://it.mercer.edu/images/footer_logo.gif" /></a>
+				</div>
+			 	
+				<div id="contact_info" >
+			 	helpdesk@mercer.edu</br><span class="anti_skype">
+			 	(478)</span> 301-<span class="anti_skype">2922</span> .  <span class="anti_skype">(678)</span> 547-<span class="anti_skype">6310</span><br />
+					
+			  </div>   
+				
+		
+				<div id="social_media_container" >
+		
+						<div id="social_icons"> 
+				    <a href="https://www.facebook.com/pages/Help-Desk/1473144699626931" target="_blank"><img src="http://it.mercer.edu/images/social_media/facebook_no_border.png" alt="" width="26" height="26" border="0"/></a>	
+                    <a href="https://twitter.com/MercerHelpDesk" target="_blank">       <img src="http://it.mercer.edu/images/social_media/twitter_no_border.png" alt=""  width="26" height="26" border="0" /></a>	
+                   
+                    <a href="https://www.instagram.com/MercerHelpDesk/" target="_blank"><img src="http://it.mercer.edu/images/social_media/instagram.png" alt=""   width="28" height="26" border="0" style="margin-left:4px;" /></a>	
+                  
+                       
+						</div>
+				</div>
+		   
+			
+				
+				
+				
+			</div>			
+				
+		  </div>
+
+
+</div>
+</div>
+</body>
+</html>
