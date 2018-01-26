@@ -1,0 +1,19 @@
+{
+  "name": "easy-listservs",
+  "version": "1.0.0",
+  "description": "Easily sign up for listservs. Now without violating DMARC!",
+  "main": "index.js",
+  "scripts": {
+    "test": "http-server ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InteractiveDesignAndDevelopment/easy-listservs.git"
+  },
+  "author": "Todd Sayre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/InteractiveDesignAndDevelopment/easy-listservs/issues"
+  },
+  "homepage": "https://github.com/InteractiveDesignAndDevelopment/easy-listservs#readme"
+}
