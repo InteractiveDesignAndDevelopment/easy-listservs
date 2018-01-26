@@ -28,7 +28,7 @@
         e.g. BIO101
       </div>
 
-        <a class="pure-button pure-button-primary" href="mailto:mailserv@mercer.edu">
+        <a class="pure-button pure-button-primary" href="mailto:mailserv@mercer.edu?body=this%20that" id="email-button">
           Email
         </a>
     </fieldset>
@@ -39,9 +39,24 @@
     // To: `mailserv@mercer.edu`
     // Body: `DIR/LIST <course id>`
 
-    document.addEventListener('DOMContentLoaded', function() {
-        console.log('Ready!');
-    });
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     // console.log('Ready!');
+    //     var emailButton = document.getElementById('email-button');
+    //     var courseField = document.getElementById('course');
+    //     console.log(courseField);
+    //
+    //     emailButton.addEventListener('click', function() {
+    //       var emailBody = 'DIR/LIST ';
+    //       var courseFieldValue = courseField.value;
+    //       console.log(courseFieldValue);
+    //       emailBody += courseFieldValue;
+    //       var newHref = URI(emailButton.getAttribute('href'))
+    //         .addQuery('body', emailBody);
+    //       newHref = decodeURIComponent(newHref.toString());
+    //       console.log(newHref);
+    //       emailButton.setAttribute('href', newHref);
+    //     });
+    // });
   </script>
 
 <!-- Stop Copying Here =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
