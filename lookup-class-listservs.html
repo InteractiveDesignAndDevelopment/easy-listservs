@@ -15,48 +15,55 @@
 
 <!-- Start Copying Here =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/forms-min.css" integrity="sha256-qgMQ+mFfAhlAKj3gSapq62o7SIAYbWAPxYhAykHSzcc=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/buttons-min.css" integrity="sha256-+RBx38dshEH8QgPl8Hg2BaGC1vdhyy/fnnnBXRtMdnE=" crossorigin="anonymous" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.19.0/URI.min.js" integrity="sha256-r1xY9ZVKxg3yQJup3KeUJLtYqrqUt9aeF7KHaprys34=" crossorigin="anonymous"></script>
+  <div>
 
-  <form class="pure-form pure-form-stacked">
-    <fieldset>
+      <div>
+        <label for="course">Course ID and Section</label>
+      </div>
 
-      <label for="course">Course ID and Section</label>
-      <input id="course" type="text">
-      <div class="pure-form-message">
+      <div>
+        <input id="course" type="text">
+      </div>
+
+      <div>
         e.g. BIO101
       </div>
 
-        <a class="pure-button pure-button-primary" href="mailto:mailserv@mercer.edu?body=this%20that" id="email-button">
+      <div>
+        <a href="mailto:mailserv@mercer.edu" id="create-email">
           Email
         </a>
-    </fieldset>
-  </form>
+      </div>
+
+  </div>
 
   <script>
-    // Email Template
-    // To: `mailserv@mercer.edu`
-    // Body: `DIR/LIST <course id>`
+    /*
+     * Email Template From Original Form Handler
+     * \\hubbabubba\e$\Inetpub\wwwroot\forms\it-class-listservs-signup.cfm
+     * To: `mailserv@mercer.edu`
+     * Body: `DIR/LIST <course id>`
+     */
 
-    // document.addEventListener('DOMContentLoaded', function() {
-    //     // console.log('Ready!');
-    //     var emailButton = document.getElementById('email-button');
-    //     var courseField = document.getElementById('course');
-    //     console.log(courseField);
-    //
-    //     emailButton.addEventListener('click', function() {
-    //       var emailBody = 'DIR/LIST ';
-    //       var courseFieldValue = courseField.value;
-    //       console.log(courseFieldValue);
-    //       emailBody += courseFieldValue;
-    //       var newHref = URI(emailButton.getAttribute('href'))
-    //         .addQuery('body', emailBody);
-    //       newHref = decodeURIComponent(newHref.toString());
-    //       console.log(newHref);
-    //       emailButton.setAttribute('href', newHref);
-    //     });
-    // });
+    document.addEventListener('DOMContentLoaded', function() {
+        // console.log('Ready!');
+        var emailButton = document.getElementById('create-email');
+        var courseField = document.getElementById('course');
+        var originalHref = emailButton.getAttribute('href');
+        // Subject prevents no-subject warning in client
+        var emailSubject = 'List';
+        // console.log(courseField);
+
+        emailButton.addEventListener('click', function() {
+          var emailBody = 'DIR/LIST ';
+          emailBody += courseField.value;
+          // console.log(emailBody);
+          var newHref = originalHref;
+          newHref += '?subject=' + emailSubject;
+          newHref += '&body=' + emailBody;
+          emailButton.setAttribute('href', newHref);
+        });
+    });
   </script>
 
 <!-- Stop Copying Here =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
