@@ -57,6 +57,7 @@
         emailButton.addEventListener('click', function() {
           var emailBody = 'DIR/LIST ';
           emailBody += courseField.value;
+          emailBody += '*';  // Wildcard
           // console.log(emailBody);
           var newHref = originalHref;
           newHref += '?subject=' + emailSubject;
