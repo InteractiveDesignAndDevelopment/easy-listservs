@@ -17,30 +17,41 @@
     <style>
     .list-block {
         border-bottom: 1px solid lightgrey;
-        width: 100%;
+        width: 80%;
         padding-top: 1em;
         padding-bottom: 1em;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
     
     .item-title {
         font-size: 1.5rem;
         padding: 0.5rem;
-        width: 75%;
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
     
     .item-description {
         padding: 0.5rem;
-        width: 75%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .list-action {
+        grid-column-start: 3;
+        grid-column-end: 4;
     }
 
     .un-sub-scribe, .sub-scribe {
-        font-size: 1.25rem;
+        font-size: 1rem;
         color: white;
         padding: 1rem;
-        float: right;
         margin: 0.5rem;
-        width: 12.5%;
         min-width: 120px;
+        min-height: 44px;
+
     }
 
     .un-sub-scribe {
@@ -59,6 +70,30 @@
         background-color: #17693a;
     }
     
+    @media screen and (max-width: 1020px) {
+        .list-block {
+        }
+
+        .item-title {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        
+        .item-description{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        
+        .list-action {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            margin: auto; 
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+    }
+
+
     </style>
     
     <div>
@@ -72,7 +107,7 @@
         <div class="item-description">
             Information and announcements for members of the Mercer Amnesty International mailing list
         </div>
-        <div>
+        <div class="list-action">
             <a class="sub-scribe">Subscribe</a>
             <a class="un-sub-scribe">Unsubscribe</a>
         </div>
@@ -85,7 +120,7 @@
         <div class="item-description">
             Department of Athletics announcements about sporting events
         </div>
-        <div>
+        <div class="list-action">
             <a class="un-sub-scribe">Subscribe</a>
             <a class="un-sub-scribe">Unsubscribe</a>
         </div>
@@ -98,7 +133,7 @@
         <div class="item-description">
             Information and announcements about carpooling opportunities.
         </div>
-        <div>
+        <div class="list-action">
             <a class="un-sub-scribe">Subscribe</a>
             <a class="un-sub-scribe">Unsubscribe</a>
         </div>
@@ -111,7 +146,7 @@
         <div class="item-description">
             For personal announcements such as classified ads, items for sale, birth announcements, etc.
         </div>
-        <div>
+        <div class="list-action">
             <a class="un-sub-scribe">Subscribe</a>
             <a class="un-sub-scribe">Unsubscribe</a>
         </div>
@@ -124,7 +159,7 @@
         <div class="item-description">
             Information and announcements about the Faculty/Staff Christian Forum.
         </div>
-        <div>
+        <div class="list-action">
             <a class="un-sub-scribe">Subscribe</a>
             <a class="un-sub-scribe">Unsubscribe</a>
         </div>
@@ -137,7 +172,7 @@
         <div class="item-description">
             Information about college teaching such as teaching articles from other schools, article publications, and conferences
         </div>
-        <div>
+        <div class="list-action">
             <a class="un-sub-scribe">Subscribe</a>
             <a class="un-sub-scribe">Unsubscribe</a>
         </div>
@@ -150,7 +185,7 @@
         <div class="item-description">
             Information and announcements about grant opportunities.
         </div>
-        <div>
+        <div class="list-action">
             <a class="un-sub-scribe">Subscribe</a>
             <a class="un-sub-scribe">Unsubscribe</a>
         </div>
@@ -163,7 +198,7 @@
         <div class="item-description">
             Information and announcements from Student Affairs.
         </div>
-        <div>
+        <div class="list-action">
             <a class="un-sub-scribe">Subscribe</a>
             <a class="un-sub-scribe">Unsubscribe</a>
         </div>
@@ -176,7 +211,7 @@
         <div class="item-description">
             Recreational Sports and Wellness announcements and information about Intramural Sports.
         </div>
-        <div>
+        <div class="list-action">
             <a class="un-sub-scribe">Subscribe</a>
             <a class="un-sub-scribe">Unsubscribe</a>
         </div>
@@ -189,7 +224,7 @@
         <div class="item-description">
             Information, announcements, and discussions for members of the Mercer University Macintosh Users Group.
         </div>
-        <div>
+        <div class="list-action">
             <a class="un-sub-scribe">Subscribe</a>
             <a class="un-sub-scribe">Unsubscribe</a>
         </div>
@@ -202,7 +237,7 @@
         <div class="item-description">
             Recreational Sports and Wellness announcements and information about Mercer Outdoors.
         </div>
-        <div>
+        <div class="list-action">
             <a class="un-sub-scribe">Subscribe</a>
             <a class="un-sub-scribe">Unsubscribe</a>
         </div>
@@ -215,7 +250,7 @@
         <div class="item-description">
             Information regarding online course design and online teaching resources.
         </div>
-        <div>
+        <div class="list-action">
             <a class="un-sub-scribe">Subscribe</a>
             <a class="un-sub-scribe">Unsubscribe</a>
         </div>
@@ -228,7 +263,7 @@
         <div class="item-description">
             Information and announcements for members of Mercer's Organization of Black Students.
         </div>
-        <div>
+        <div class="list-action">
             <a class="un-sub-scribe">Subscribe</a>
             <a class="un-sub-scribe">Unsubscribe</a>
         </div>
@@ -241,7 +276,7 @@
         <div class="item-description">
             For announcements regarding births, illnesses, deaths, and requests for prayers (aka Manna-L).
         </div>
-        <div>
+        <div class="list-action">
             <a class="un-sub-scribe">Subscribe</a>
             <a class="un-sub-scribe">Unsubscribe</a>
         </div>
@@ -254,7 +289,7 @@
         <div class="item-description">
             Information and announcements for the Mercer philosophy community as well as a forum for questions and discussion of philosophical issues
         </div>
-        <div>
+        <div class="list-action">
             <a class="un-sub-scribe">Subscribe</a>
             <a class="un-sub-scribe">Unsubscribe</a>
         </div>
@@ -267,7 +302,7 @@
         <div class="item-description">
             Information and events about the Mercer University <abbr title="Self-Contained Underwater Breather Apparatus">SCUBA</abbr> club
         </div>
-        <div>
+        <div class="list-action">
             <a class="un-sub-scribe">Subscribe</a>
             <a class="un-sub-scribe">Unsubscribe</a>
         </div>
@@ -280,7 +315,7 @@
         <div class="item-description">
             Service Learning discussion list sponsored by the Office of Service Learning.
         </div>
-        <div>
+        <div class="list-action">
             <a class="un-sub-scribe">Subscribe</a>
             <a class="un-sub-scribe">Unsubscribe</a>
         </div>
@@ -293,7 +328,7 @@
         <div class="item-description">
             For discussions and debates about issues and topics of interest to the people subscribed to this list.
         </div>
-        <div>
+        <div class="list-action">
             <a class="un-sub-scribe">Subscribe</a>
             <a class="un-sub-scribe">Unsubscribe</a>
         </div>
@@ -306,7 +341,7 @@
         <div class="item-description">
             Use for getting/giving assistance with technical issues (eg, software, hardware, etc.)
         </div>
-        <div>
+        <div class="list-action">
             <a class="un-sub-scribe">Subscribe</a>
             <a class="un-sub-scribe">Unsubscribe</a>
         </div>
@@ -319,7 +354,7 @@
         <div class="item-description">
             Event announcements, information, and discussions related to the Mercer Wellness Program.
         </div>
-        <div>
+        <div class="list-action">
             <a class="un-sub-scribe">Subscribe</a>
             <a class="un-sub-scribe">Unsubscribe</a>
         </div>
