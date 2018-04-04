@@ -14,91 +14,7 @@
     </p>
 
 <!-- Start Copying Here =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- -->
-    <style>
-    .list-block {
-        border-bottom: 1px solid lightgrey;
-        width: 80%;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-    
-    .item-title {
-        font-size: 1.5rem;
-        padding: 0.5rem;
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-    
-    .item-description {
-        padding: 0.5rem;
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-
-    .list-action {
-        grid-column-start: 3;
-        grid-column-end: 4;
-    }
-
-    .un-sub-scribe, .sub-scribe {
-        font-size: 1rem;
-        color: white;
-        padding: 1rem;
-        margin: 0.5rem;
-        min-width: 120px;
-        min-height: 44px;
-        cursor: pointer;
-    }
-
-    .un-sub-scribe, .sub-scribe a{
-        text-decoration: none;
-    }
-
-    .un-sub-scribe {
-        background-color: #EB5757;
-    }   
-
-    .un-sub-scribe:hover {
-        background-color: #a43c3c;
-    }
-
-    .sub-scribe {
-        background-color: #219653;
-    }
-
-    .sub-scribe:hover {
-        background-color: #17693a;
-    }
-    
-    @media screen and (max-width: 1020px) {
-        .list-block {
-        }
-
-        .item-title {
-            grid-column-start: 1;
-            grid-column-end: 4;
-        }
-        
-        .item-description{
-            grid-column-start: 1;
-            grid-column-end: 4;
-        }
-        
-        .list-action {
-            grid-column-start: 1;
-            grid-column-end: 4;
-            margin: auto; 
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-        }
-    }
-
-
-    </style>
+    <link rel="stylesheet" href="listserv-manage.css" inline>
     
     <div>
         Special Interest Listservs
@@ -365,55 +281,7 @@
     </div>
 
     <script>
-        // Element.closest polyfill
-        if (window.Element && !Element.prototype.closest) {
-            Element.prototype.closest =
-                function (s) {
-                    var matches = (this.document || this.ownerDocument).querySelectorAll(s),
-                        i,
-                        el = this;
-                    do {
-                        i = matches.length;
-                        while (--i >= 0 && matches.item(i) !== el) {};
-                    } while ((i < 0) && (el = el.parentElement));
-                    return el;
-                };
-        }
 
-        /*
-         * Email Template From Original Form Handler
-         * \\hubbabubba\e$\Inetpub\wwwroot\forms\subscribe2list.cfm
-         * To: `mailserv@mercer.edu`
-         * Subject: `<Subscribe|Unsubscribe> <listserv id>`
-         * Body: `<Subscribe|Unsubscribe> <listserv id>`
-         */
-        document.addEventListener('DOMContentLoaded', function () {
-            // console.log('Ready!');
-
-            var emailTo = 'mailserv@mercer.edu';
-            var unSubScribeButtons = document.querySelectorAll('.un-sub-scribe');
-
-            Array.prototype.forEach.call(unSubScribeButtons, function (link) {
-                var div = link.closest('[data-list-id]');
-                var listservId = div.getAttribute('data-list-id');
-                var href = 'mailto:' + emailTo;
-                var isSubscribe = !/unsub/.test(link.innerText);
-                var command = '';
-
-                if (isSubscribe) {
-                    command += 'Subscribe ';
-                } else {
-                    command += 'Unsubscribe ';
-                }
-
-                command += listservId;
-
-                href += '?subject=' + command + '&body=' + command;
-
-                link.setAttribute('href', href);
-            });
-
-        });
     </script>
 
 <!-- Stop Copying Here =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
