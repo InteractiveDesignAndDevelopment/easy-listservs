@@ -5,5 +5,29 @@
 @import '../../node_modules/sass-bem/bem';
 
 @include b(listserv-lookup) {
-  background-color: antiquewhite;
+
+  @include e(field) {
+    padding: 1rem;
+    margin: 0 0.5rem;
+  }
+
+  @include e(hint) {
+    font-style: italic;
+    color: grey;
+  }
+
+  @include e(button) {
+    font-size: 1rem;
+    background-color: #217696;
+    color: white;
+    padding: 1rem;
+    margin: 20px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, .3);
+
+    &:hover{
+      background-color: #1a5e78;
+    }
+  }
 }
