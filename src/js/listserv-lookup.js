@@ -22,6 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mailto protocol links break normal URI encoding rules
     newMailTo = newMailTo.replace(' ', '%20');
 
-    courseField.setAttribute('href', newMailTo);
+    // console.log(newMailTo);
+
+    emailButton.setAttribute('href', newMailTo);
   });
 });

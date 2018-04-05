@@ -15,270 +15,272 @@
 
         <!-- Start Copying Here -->
 
-        <style>.list-block{border-bottom:1px solid #d3d3d3;width:80%;padding-top:1em;padding-bottom:1em;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,1fr)}.item-title{font-size:1.5rem}.item-description,.item-title{padding:.5rem;grid-column-start:1;grid-column-end:3}.list-action{grid-column-start:3;grid-column-end:4}.sub-scribe,.un-sub-scribe{font-size:1rem;color:#fff;padding:1rem;margin:.5rem;min-width:120px;min-height:44px;cursor:pointer}.sub-scribe a,.un-sub-scribe{text-decoration:none}.un-sub-scribe{background-color:#eb5757}.un-sub-scribe:hover{background-color:#a43c3c}.sub-scribe{background-color:#219653}.sub-scribe:hover{background-color:#17693a}@media screen and (max-width:1020px){.item-description,.item-title,.list-action{grid-column-start:1;grid-column-end:4}.list-action{margin:auto;padding-top:1rem;padding-bottom:1rem}}</style>
+        <style>.listserv-control{background-color:#faebd7}.listserv-control__listserv{border-bottom:1px solid #d3d3d3;width:80%;padding-top:1em;padding-bottom:1em;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,1fr)}.listserv-control__title{font-size:1.5rem;padding:.5rem;grid-column-start:1;grid-column-end:3}@media screen and (max-width:1020px){.listserv-control__title{grid-column-start:1;grid-column-end:4}}.listserv-control__description{padding:.5rem;grid-column-start:1;grid-column-end:3}@media screen and (max-width:1020px){.listserv-control__description{grid-column-start:1;grid-column-end:4}}.listserv-control__actions{grid-column-start:3;grid-column-end:4}@media screen and (max-width:1020px){.listserv-control__actions{grid-column-start:1;grid-column-end:4;margin:auto;padding-top:1rem;padding-bottom:1rem}}.listserv-control__action{font-size:1rem;color:#fff;padding:1rem;margin:.5rem;min-width:120px;min-height:44px;cursor:pointer;text-decoration:none}.listserv-control__action--unsubscribe{background-color:#eb5757}.listserv-control__action--unsubscribe:hover{background-color:#a43c3c}.listserv-control__action--subscribe{background-color:#219653}.listserv-control__action--subscribe:hover{background-color:#17693a}</style>
 
-        <div>
-            Special Interest Listservs
-        </div>
+        <div class="listserv-control">
 
-        <div data-list-id="AmnestyInt-L" class="list-block">
-            <div class="item-title">
-                Amnesty International
-            </div>
-            <div class="item-description">
-                Information and announcements for members of the Mercer Amnesty International mailing list
-            </div>
-            <div class="list-action">
-                <a class="sub-scribe">Subscribe</a>
-                <a class="un-sub-scribe">Unsubscribe</a>
-            </div>
-        </div>
+            <div class="listserv-control__heading">Special Interest Listservs</div>
 
-        <div data-list-id="BearSports-L" class="list-block">
-            <div class="item-title">
-                Athletics
+            <div data-list-id="AmnestyInt-L" class="listserv-control__listserv">
+                <div class="listserv-control__title">
+                    Amnesty International
+                </div>
+                <div class="listserv-control__description">
+                    Information and announcements for members of the Mercer Amnesty International mailing list
+                </div>
+                <div class="listserv-control__actions">
+                    <a class="listserv-control__action listserv-control__action--subscribe">Subscribe</a>
+                    <a class="listserv-control__action listserv-control__action--unsubscribe">Unsubscribe</a>
+                </div>
             </div>
-            <div class="item-description">
-                Department of Athletics announcements about sporting events
-            </div>
-            <div class="list-action">
-                <a class="sub-scribe">Subscribe</a>
-                <a class="un-sub-scribe">Unsubscribe</a>
-            </div>
-        </div>
 
-          <div data-list-id="Carpooling-L" class="list-block">
-            <div class="item-title">
-                Carpooling Information
+            <div data-list-id="BearSports-L" class="listserv-control__listserv">
+                <div class="listserv-control__title">
+                    Athletics
+                </div>
+                <div class="listserv-control__description">
+                    Department of Athletics announcements about sporting events
+                </div>
+                <div class="listserv-control__actions">
+                    <a class="listserv-control__action listserv-control__action--subscribe">Subscribe</a>
+                    <a class="listserv-control__action listserv-control__action--unsubscribe">Unsubscribe</a>
+                </div>
             </div>
-            <div class="item-description">
-                Information and announcements about carpooling opportunities.
-            </div>
-            <div class="list-action">
-                <a class="sub-scribe">Subscribe</a>
-                <a class="un-sub-scribe">Unsubscribe</a>
-            </div>
-        </div>
 
-        <div data-list-id="Email-Shop" class="list-block">
-            <div class="item-title">
-                Email-Shop
+              <div data-list-id="Carpooling-L" class="listserv-control__listserv">
+                <div class="listserv-control__title">
+                    Carpooling Information
+                </div>
+                <div class="listserv-control__description">
+                    Information and announcements about carpooling opportunities.
+                </div>
+                <div class="listserv-control__actions">
+                    <a class="listserv-control__action listserv-control__action--subscribe">Subscribe</a>
+                    <a class="listserv-control__action listserv-control__action--unsubscribe">Unsubscribe</a>
+                </div>
             </div>
-            <div class="item-description">
-                For personal announcements such as classified ads, items for sale, birth announcements, etc.
-            </div>
-            <div class="list-action">
-                <a class="sub-scribe">Subscribe</a>
-                <a class="un-sub-scribe">Unsubscribe</a>
-            </div>
-        </div>
 
-        <div data-list-id="FSCF-L" class="list-block">
-            <div class="item-title">
-                Faculty/Staff Christian Forum
+            <div data-list-id="Email-Shop" class="listserv-control__listserv">
+                <div class="listserv-control__title">
+                    Email-Shop
+                </div>
+                <div class="listserv-control__description">
+                    For personal announcements such as classified ads, items for sale, birth announcements, etc.
+                </div>
+                <div class="listserv-control__actions">
+                    <a class="listserv-control__action listserv-control__action--subscribe">Subscribe</a>
+                    <a class="listserv-control__action listserv-control__action--unsubscribe">Unsubscribe</a>
+                </div>
             </div>
-            <div class="item-description">
-                Information and announcements about the Faculty/Staff Christian Forum.
-            </div>
-            <div class="list-action">
-                <a class="sub-scribe">Subscribe</a>
-                <a class="un-sub-scribe">Unsubscribe</a>
-            </div>
-        </div>
 
-        <div data-list-id="FacultyDev-L" class="list-block">
-            <div class="item-title">
-                Faculty Development
+            <div data-list-id="FSCF-L" class="listserv-control__listserv">
+                <div class="listserv-control__title">
+                    Faculty/Staff Christian Forum
+                </div>
+                <div class="listserv-control__description">
+                    Information and announcements about the Faculty/Staff Christian Forum.
+                </div>
+                <div class="listserv-control__actions">
+                    <a class="listserv-control__action listserv-control__action--subscribe">Subscribe</a>
+                    <a class="listserv-control__action listserv-control__action--unsubscribe">Unsubscribe</a>
+                </div>
             </div>
-            <div class="item-description">
-                Information about college teaching such as teaching articles from other schools, article publications, and conferences
-            </div>
-            <div class="list-action">
-                <a class="sub-scribe">Subscribe</a>
-                <a class="un-sub-scribe">Unsubscribe</a>
-            </div>
-        </div>
 
-        <div data-list-id="Grants-L" class="list-block">
-            <div class="item-title">
-                Grant Opportunities
+            <div data-list-id="FacultyDev-L" class="listserv-control__listserv">
+                <div class="listserv-control__title">
+                    Faculty Development
+                </div>
+                <div class="listserv-control__description">
+                    Information about college teaching such as teaching articles from other schools, article publications, and conferences
+                </div>
+                <div class="listserv-control__actions">
+                    <a class="listserv-control__action listserv-control__action--subscribe">Subscribe</a>
+                    <a class="listserv-control__action listserv-control__action--unsubscribe">Unsubscribe</a>
+                </div>
             </div>
-            <div class="item-description">
-                Information and announcements about grant opportunities.
-            </div>
-            <div class="list-action">
-                <a class="sub-scribe">Subscribe</a>
-                <a class="un-sub-scribe">Unsubscribe</a>
-            </div>
-        </div>
 
-        <div data-list-id="GuestList-L" class="list-block">
-            <div class="item-title">
-                Guest List
+            <div data-list-id="Grants-L" class="listserv-control__listserv">
+                <div class="listserv-control__title">
+                    Grant Opportunities
+                </div>
+                <div class="listserv-control__description">
+                    Information and announcements about grant opportunities.
+                </div>
+                <div class="listserv-control__actions">
+                    <a class="listserv-control__action listserv-control__action--subscribe">Subscribe</a>
+                    <a class="listserv-control__action listserv-control__action--unsubscribe">Unsubscribe</a>
+                </div>
             </div>
-            <div class="item-description">
-                Information and announcements from Student Affairs.
-            </div>
-            <div class="list-action">
-                <a class="sub-scribe">Subscribe</a>
-                <a class="un-sub-scribe">Unsubscribe</a>
-            </div>
-        </div>
 
-        <div data-list-id="IMSports-L" class="list-block">
-            <div class="item-title">
-                Intramural Sports
+            <div data-list-id="GuestList-L" class="listserv-control__listserv">
+                <div class="listserv-control__title">
+                    Guest List
+                </div>
+                <div class="listserv-control__description">
+                    Information and announcements from Student Affairs.
+                </div>
+                <div class="listserv-control__actions">
+                    <a class="listserv-control__action listserv-control__action--subscribe">Subscribe</a>
+                    <a class="listserv-control__action listserv-control__action--unsubscribe">Unsubscribe</a>
+                </div>
             </div>
-            <div class="item-description">
-                Recreational Sports and Wellness announcements and information about Intramural Sports.
-            </div>
-            <div class="list-action">
-                <a class="sub-scribe">Subscribe</a>
-                <a class="un-sub-scribe">Unsubscribe</a>
-            </div>
-        </div>
 
-        <div data-list-id="MUMU-L" class="list-block">
-            <div class="item-title">
-                Mercer University Macintosh Users
+            <div data-list-id="IMSports-L" class="listserv-control__listserv">
+                <div class="listserv-control__title">
+                    Intramural Sports
+                </div>
+                <div class="listserv-control__description">
+                    Recreational Sports and Wellness announcements and information about Intramural Sports.
+                </div>
+                <div class="listserv-control__actions">
+                    <a class="listserv-control__action listserv-control__action--subscribe">Subscribe</a>
+                    <a class="listserv-control__action listserv-control__action--unsubscribe">Unsubscribe</a>
+                </div>
             </div>
-            <div class="item-description">
-                Information, announcements, and discussions for members of the Mercer University Macintosh Users Group.
-            </div>
-            <div class="list-action">
-                <a class="sub-scribe">Subscribe</a>
-                <a class="un-sub-scribe">Unsubscribe</a>
-            </div>
-        </div>
 
-        <div data-list-id="MUOutdoors-L" class="list-block">
-            <div class="item-title">
-                Mercer Outdoors
+            <div data-list-id="MUMU-L" class="listserv-control__listserv">
+                <div class="listserv-control__title">
+                    Mercer University Macintosh Users
+                </div>
+                <div class="listserv-control__description">
+                    Information, announcements, and discussions for members of the Mercer University Macintosh Users Group.
+                </div>
+                <div class="listserv-control__actions">
+                    <a class="listserv-control__action listserv-control__action--subscribe">Subscribe</a>
+                    <a class="listserv-control__action listserv-control__action--unsubscribe">Unsubscribe</a>
+                </div>
             </div>
-            <div class="item-description">
-                Recreational Sports and Wellness announcements and information about Mercer Outdoors.
-            </div>
-            <div class="list-action">
-                <a class="sub-scribe">Subscribe</a>
-                <a class="un-sub-scribe">Unsubscribe</a>
-            </div>
-        </div>
 
-        <div data-list-id="onlineteaching-L" class="list-block">
-            <div class="item-title">
-                Online Teaching
+            <div data-list-id="MUOutdoors-L" class="listserv-control__listserv">
+                <div class="listserv-control__title">
+                    Mercer Outdoors
+                </div>
+                <div class="listserv-control__description">
+                    Recreational Sports and Wellness announcements and information about Mercer Outdoors.
+                </div>
+                <div class="listserv-control__actions">
+                    <a class="listserv-control__action listserv-control__action--subscribe">Subscribe</a>
+                    <a class="listserv-control__action listserv-control__action--unsubscribe">Unsubscribe</a>
+                </div>
             </div>
-            <div class="item-description">
-                Information regarding online course design and online teaching resources.
-            </div>
-            <div class="list-action">
-                <a class="sub-scribe">Subscribe</a>
-                <a class="un-sub-scribe">Unsubscribe</a>
-            </div>
-        </div>
 
-        <div data-list-id="OBS-L" class="list-block">
-            <div class="item-title">
-                Organization of Black Students
+            <div data-list-id="onlineteaching-L" class="listserv-control__listserv">
+                <div class="listserv-control__title">
+                    Online Teaching
+                </div>
+                <div class="listserv-control__description">
+                    Information regarding online course design and online teaching resources.
+                </div>
+                <div class="listserv-control__actions">
+                    <a class="listserv-control__action listserv-control__action--subscribe">Subscribe</a>
+                    <a class="listserv-control__action listserv-control__action--unsubscribe">Unsubscribe</a>
+                </div>
             </div>
-            <div class="item-description">
-                Information and announcements for members of Mercer's Organization of Black Students.
-            </div>
-            <div class="list-action">
-                <a class="sub-scribe">Subscribe</a>
-                <a class="un-sub-scribe">Unsubscribe</a>
-            </div>
-        </div>
 
-        <div data-list-id="PrayersnPraise-L" class="list-block">
-            <div class="item-title">
-                Prayers 'n Praise
+            <div data-list-id="OBS-L" class="listserv-control__listserv">
+                <div class="listserv-control__title">
+                    Organization of Black Students
+                </div>
+                <div class="listserv-control__description">
+                    Information and announcements for members of Mercer's Organization of Black Students.
+                </div>
+                <div class="listserv-control__actions">
+                    <a class="listserv-control__action listserv-control__action--subscribe">Subscribe</a>
+                    <a class="listserv-control__action listserv-control__action--unsubscribe">Unsubscribe</a>
+                </div>
             </div>
-            <div class="item-description">
-                For announcements regarding births, illnesses, deaths, and requests for prayers (aka Manna-L).
-            </div>
-            <div class="list-action">
-                <a class="sub-scribe">Subscribe</a>
-                <a class="un-sub-scribe">Unsubscribe</a>
-            </div>
-        </div>
 
-        <div data-list-id="Philosophy-L" class="list-block">
-            <div class="item-title">
-                Philosophy
+            <div data-list-id="PrayersnPraise-L" class="listserv-control__listserv">
+                <div class="listserv-control__title">
+                    Prayers 'n Praise
+                </div>
+                <div class="listserv-control__description">
+                    For announcements regarding births, illnesses, deaths, and requests for prayers (aka Manna-L).
+                </div>
+                <div class="listserv-control__actions">
+                    <a class="listserv-control__action listserv-control__action--subscribe">Subscribe</a>
+                    <a class="listserv-control__action listserv-control__action--unsubscribe">Unsubscribe</a>
+                </div>
             </div>
-            <div class="item-description">
-                Information and announcements for the Mercer philosophy community as well as a forum for questions and discussion of philosophical issues
-            </div>
-            <div class="list-action">
-                <a class="sub-scribe">Subscribe</a>
-                <a class="un-sub-scribe">Unsubscribe</a>
-            </div>
-        </div>
 
-        <div data-list-id="SCUBA-L" class="list-block">
-            <div class="item-title">
-                <abbr title="Self-Contained Underwater Breather Apparatus">SCUBA</abbr>
+            <div data-list-id="Philosophy-L" class="listserv-control__listserv">
+                <div class="listserv-control__title">
+                    Philosophy
+                </div>
+                <div class="listserv-control__description">
+                    Information and announcements for the Mercer philosophy community as well as a forum for questions and discussion of philosophical issues
+                </div>
+                <div class="listserv-control__actions">
+                    <a class="listserv-control__action listserv-control__action--subscribe">Subscribe</a>
+                    <a class="listserv-control__action listserv-control__action--unsubscribe">Unsubscribe</a>
+                </div>
             </div>
-            <div class="item-description">
-                Information and events about the Mercer University <abbr title="Self-Contained Underwater Breather Apparatus">SCUBA</abbr> club
-            </div>
-            <div class="list-action">
-                <a class="sub-scribe">Subscribe</a>
-                <a class="un-sub-scribe">Unsubscribe</a>
-            </div>
-        </div>
 
-        <div data-list-id="ServiceLearning-L" class="list-block">
-            <div class="item-title">
-                Service Learning
+            <div data-list-id="SCUBA-L" class="listserv-control__listserv">
+                <div class="listserv-control__title">
+                    <abbr title="Self-Contained Underwater Breather Apparatus">SCUBA</abbr>
+                </div>
+                <div class="listserv-control__description">
+                    Information and events about the Mercer University <abbr title="Self-Contained Underwater Breather Apparatus">SCUBA</abbr> club
+                </div>
+                <div class="listserv-control__actions">
+                    <a class="listserv-control__action listserv-control__action--subscribe">Subscribe</a>
+                    <a class="listserv-control__action listserv-control__action--unsubscribe">Unsubscribe</a>
+                </div>
             </div>
-            <div class="item-description">
-                Service Learning discussion list sponsored by the Office of Service Learning.
-            </div>
-            <div class="list-action">
-                <a class="sub-scribe">Subscribe</a>
-                <a class="un-sub-scribe">Unsubscribe</a>
-            </div>
-        </div>
 
-        <div data-list-id="SoapBox-L" class="list-block">
-            <div class="item-title">
-                SoapBox
+            <div data-list-id="ServiceLearning-L" class="listserv-control__listserv">
+                <div class="listserv-control__title">
+                    Service Learning
+                </div>
+                <div class="listserv-control__description">
+                    Service Learning discussion list sponsored by the Office of Service Learning.
+                </div>
+                <div class="listserv-control__actions">
+                    <a class="listserv-control__action listserv-control__action--subscribe">Subscribe</a>
+                    <a class="listserv-control__action listserv-control__action--unsubscribe">Unsubscribe</a>
+                </div>
             </div>
-            <div class="item-description">
-                For discussions and debates about issues and topics of interest to the people subscribed to this list.
-            </div>
-            <div class="list-action">
-                <a class="sub-scribe">Subscribe</a>
-                <a class="un-sub-scribe">Unsubscribe</a>
-            </div>
-        </div>
 
-        <div data-list-id="Techline-L" class="list-block">
-            <div class="item-title">
-                Techline
+            <div data-list-id="SoapBox-L" class="listserv-control__listserv">
+                <div class="listserv-control__title">
+                    SoapBox
+                </div>
+                <div class="listserv-control__description">
+                    For discussions and debates about issues and topics of interest to the people subscribed to this list.
+                </div>
+                <div class="listserv-control__actions">
+                    <a class="listserv-control__action listserv-control__action--subscribe">Subscribe</a>
+                    <a class="listserv-control__action listserv-control__action--unsubscribe">Unsubscribe</a>
+                </div>
             </div>
-            <div class="item-description">
-                Use for getting/giving assistance with technical issues (eg, software, hardware, etc.)
-            </div>
-            <div class="list-action">
-                <a class="sub-scribe">Subscribe</a>
-                <a class="un-sub-scribe">Unsubscribe</a>
-            </div>
-        </div>
 
-        <div data-list-id="Wellness-L" class="list-block">
-            <div class="item-title">
-                Wellness
+            <div data-list-id="Techline-L" class="listserv-control__listserv">
+                <div class="listserv-control__title">
+                    Techline
+                </div>
+                <div class="listserv-control__description">
+                    Use for getting/giving assistance with technical issues (eg, software, hardware, etc.)
+                </div>
+                <div class="listserv-control__actions">
+                    <a class="listserv-control__action listserv-control__action--subscribe">Subscribe</a>
+                    <a class="listserv-control__action listserv-control__action--unsubscribe">Unsubscribe</a>
+                </div>
             </div>
-            <div class="item-description">
-                Event announcements, information, and discussions related to the Mercer Wellness Program.
+
+            <div data-list-id="Wellness-L" class="listserv-control__listserv">
+                <div class="listserv-control__title">
+                    Wellness
+                </div>
+                <div class="listserv-control__description">
+                    Event announcements, information, and discussions related to the Mercer Wellness Program.
+                </div>
+                <div class="listserv-control__actions">
+                    <a class="listserv-control__action listserv-control__action--subscribe">Subscribe</a>
+                    <a class="listserv-control__action listserv-control__action--unsubscribe">Unsubscribe</a>
+                </div>
             </div>
-            <div class="list-action">
-                <a class="sub-scribe">Subscribe</a>
-                <a class="un-sub-scribe">Unsubscribe</a>
-            </div>
+
         </div>
 
         <script>(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){

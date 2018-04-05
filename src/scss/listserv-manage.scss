@@ -1,0 +1,84 @@
+/**
+ * @author Todd Sayre
+ */
+
+@import '../../node_modules/sass-bem/bem';
+
+@include b(listserv-control) {
+  background-color: antiquewhite;
+
+  @include e(listserv) {
+    border-bottom: 1px solid lightgrey;
+    width: 80%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  @include e(title) {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    @media screen and (max-width: 1020px) {
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+  }
+
+  @include e(description) {
+    padding: 0.5rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    @media screen and (max-width: 1020px) {
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+  }
+
+  @include e(actions) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    @media screen and (max-width: 1020px) {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      margin: auto;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  @include e(action) {
+    font-size: 1rem;
+    color: white;
+    padding: 1rem;
+    margin: 0.5rem;
+    min-width: 120px;
+    min-height: 44px;
+    cursor: pointer;
+    text-decoration: none;
+
+    @include m(unsubscribe) {
+      background-color: #EB5757;
+
+      &:hover {
+        background-color: #a43c3c;
+      }
+    }
+
+    @include m(subscribe) {
+      background-color: #219653;
+
+      &:hover {
+        background-color: #17693a;
+      }
+    }
+  }
+
+}

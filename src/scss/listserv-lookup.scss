@@ -1,0 +1,9 @@
+/**
+ * @author Todd Sayre
+ */
+
+@import '../../node_modules/sass-bem/bem';
+
+@include b(listserv-lookup) {
+  background-color: antiquewhite;
+}
