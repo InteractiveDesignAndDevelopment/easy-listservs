@@ -62,3 +62,10 @@ typings/
 
 # IntelliJ
 .idea/
+
+# Project-specific
+build/
+dist/
+test/lookup-class-listservs.html
+test/special-interest-listservs-faculty.html
+test/special-interest-listservs-student.html
