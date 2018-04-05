@@ -16,8 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
   courseField.addEventListener('keyup', function() {
     let course = courseField.value;
     let body = `DIR/LIST ${course}*`;
-    let subject = body;
-    let newMailTo = `${mailTo}?body=${body}`;
+    let newMailTo = `${mailTo}?subject=${body}&body=${body}`;
 
     // Mailto protocol links break normal URI encoding rules
     newMailTo = newMailTo.replace(' ', '%20');
