@@ -15,7 +15,7 @@
 
         <!-- Start Copying Here -->
 
-        <link rel="stylesheet" href="listserv-manage.css" inline>
+        <style>.list-block{border-bottom:1px solid #d3d3d3;width:80%;padding-top:1em;padding-bottom:1em;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,1fr)}.item-title{font-size:1.5rem}.item-description,.item-title{padding:.5rem;grid-column-start:1;grid-column-end:3}.list-action{grid-column-start:3;grid-column-end:4}.sub-scribe,.un-sub-scribe{font-size:1rem;color:#fff;padding:1rem;margin:.5rem;min-width:120px;min-height:44px;cursor:pointer}.sub-scribe a,.un-sub-scribe{text-decoration:none}.un-sub-scribe{background-color:#eb5757}.un-sub-scribe:hover{background-color:#a43c3c}.sub-scribe{background-color:#219653}.sub-scribe:hover{background-color:#17693a}@media screen and (max-width:1020px){.item-description,.item-title,.list-action{grid-column-start:1;grid-column-end:4}.list-action{margin:auto;padding-top:1rem;padding-bottom:1rem}}</style>
 
         <div>Special Interest Listservs</div>
 
@@ -217,7 +217,11 @@
             <div>Event announcements, information, and discussions related to the Mercer Wellness Program</div>
         </div>
 
-        <script href="listserv-manage.js" inline>
+        <script>(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+'use strict';window.Element&&!Element.prototype.closest&&(Element.prototype.closest=function(a){var b,c=(this.document||this.ownerDocument).querySelectorAll(a),d=this;do for(b=c.length;0<=--b&&c.item(b)!==d;);while(0>b&&(d=d.parentElement));return d}),document.addEventListener('DOMContentLoaded',function(){var a=document.querySelectorAll('.un-sub-scribe');Array.prototype.forEach.call(a,function(a){var b=a.closest('[data-list-id]'),c=b.getAttribute('data-list-id'),d='mailto:'+'mailserv@mercer.edu',e=!/unsub/.test(a.innerText),f='';f+=e?'Subscribe ':'Unsubscribe ',f+=c,d+='?subject='+f+'&body='+f,a.setAttribute('href',d)})});
+
+},{}]},{},[1]);
+</script>
 
         <!-- Stop Copying Here -->
 

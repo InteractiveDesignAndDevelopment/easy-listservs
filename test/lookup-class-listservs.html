@@ -1,2 +1,52 @@
+<!doctype html>
+<html>
 
+    <head>
+        <title>Lookup Listservs</title>
+    </head>
 
+    <body>
+
+        <h1>Lookup Class Listerservs</h1>
+
+        <p>
+            <a href="https://it.mercer.edu/faculty/email/email_listservs.htm">Original Page</a>
+        </p>
+
+        <!-- Start Copying Here -->
+
+        <link rel="stylesheet" href="listserv-lookup.css" inline>
+
+        <div>
+
+            <div>
+                <label for="course">Course ID and Section</label>
+            </div>
+
+            <div>
+                <input id="course" type="text">
+            </div>
+
+            <div>
+                e.g. BIO101
+            </div>
+
+            <div>
+                <a href="mailto:mailserv@mercer.edu" id="email">
+                    Email
+                </a>
+            </div>
+
+        </div>
+
+        <script>(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+'use strict';document.addEventListener('DOMContentLoaded',function(){var a=document.getElementById('course'),b=document.getElementById('email'),c=b.getAttribute('href');a.addEventListener('keypress',function(){var b=a.value,d='DIR/LIST '+b+'*',e=c+'?body='+d;e=e.replace(' ','%20'),a.setAttribute('href',e)})});
+
+},{}]},{},[1]);
+</script>
+
+        <!-- Stop Copying Here -->
+
+    </body>
+
+</html>
