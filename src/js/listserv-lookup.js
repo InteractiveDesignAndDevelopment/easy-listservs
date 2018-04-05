@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   let mailTo = emailButton.getAttribute('href');
 
-  courseField.addEventListener('keypress', function() {
+  courseField.addEventListener('keyup', function() {
     let course = courseField.value;
     let body = `DIR/LIST ${course}*`;
     let subject = body;
