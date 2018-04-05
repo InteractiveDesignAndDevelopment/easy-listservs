@@ -1,0 +1,16 @@
+/**
+ * @author Herb Cockburn
+ *
+ * Here lie shameful bits of code that should not exist, but do.
+ */
+
+@include b(listserv-lookup) {
+  a {
+    color: white;
+
+    &:hover {
+      color: white !important;
+      background-color: #1a5e78;
+    }
+  }
+}
