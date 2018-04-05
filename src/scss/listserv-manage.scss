@@ -5,7 +5,6 @@
 @import '../../node_modules/sass-bem/bem';
 
 @include b(listserv-control) {
-  background-color: antiquewhite;
 
   @include e(listserv) {
     border-bottom: 1px solid lightgrey;
@@ -54,9 +53,9 @@
     @media screen and (max-width: 1020px) {
       grid-column-start: 1;
       grid-column-end: 4;
-      margin: auto;
       padding-top: 1rem;
       padding-bottom: 1rem;
+      display: flex;
     }
   }
 
@@ -65,10 +64,11 @@
     color: white;
     padding: 1rem;
     margin: 0.5rem;
-    min-width: 120px;
-    min-height: 44px;
     cursor: pointer;
     text-decoration: none;
+    flex: auto;
+    text-align: center;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, .3);
 
     @include m(unsubscribe) {
       background-color: #EB5757;
