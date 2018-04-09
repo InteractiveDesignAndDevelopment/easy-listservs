@@ -3,6 +3,7 @@
  */
 
 @import '../../node_modules/sass-bem/bem';
+@import 'listserv-manage-hacks';
 
 @include b(listserv-control) {
 
@@ -62,13 +63,13 @@
   @include e(action) {
     font-size: 1rem;
     color: white;
-    padding: 1rem;
-    margin: 0.5rem;
+    padding: 0.3rem;
+    margin: 0.2rem;
     cursor: pointer;
     text-decoration: none;
     flex: auto;
     text-align: center;
-    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, .3);
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
 
     @include m(unsubscribe) {
       background-color: #EB5757;
