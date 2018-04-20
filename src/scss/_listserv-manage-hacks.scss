@@ -1,0 +1,12 @@
+@include b(listserv-control) {
+
+  a {
+    &:link {
+      color: white;
+    }
+    &:hover {
+      color: white !important;
+    }
+  }
+
+}

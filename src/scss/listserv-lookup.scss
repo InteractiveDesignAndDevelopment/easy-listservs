@@ -3,8 +3,16 @@
  */
 
 @import '../../node_modules/sass-bem/bem';
+@import 'listserv-lookup-hacks';
 
 @include b(listserv-lookup) {
+
+  @include e(instruction) {
+    @include m(danger) {
+      color: #a41404;
+      font-weight: bold;
+    }
+  }
 
   @include e(field) {
     padding: 1rem;
