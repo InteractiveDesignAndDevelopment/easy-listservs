@@ -64,9 +64,7 @@ typings/
 .idea/
 
 # Project-specific
-<<<<<<< HEAD
-=======
->>>>>>> 8aab7177ef89fc5b92c626a6eb63e4cdcd0b06c5
+build/
 dist/
 test/lookup-class-listservs.html
 test/special-interest-listservs-faculty.html
